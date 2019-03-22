@@ -1,0 +1,66 @@
+@import '../common.less';
+ 
+//商户入驻协议  //用户使用协议
+.businessRead-container, .userRead-container{
+  padding: 0 30px;
+  background: #fff;
+  font-size: @font-size-md;
+  color: @icon-color;
+  h1{
+    font-size: @font-size-lg;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0 25px 0;
+  }
+  h2{
+    font-size:@font-size-mdlg;
+    padding-bottom: 20px;
+  }
+  p{
+    padding-bottom: 20px;
+    word-break: break-all;
+  }
+}
+
+//卡券帮助文档 ---卡券包、卡券
+.couponBagHelp-container{
+  padding: 20px;
+  background: #fff;
+  font-size: @font-size-md;
+  color: @icon-color;
+  .explainItem{
+    padding-bottom: 48px;
+    .title{
+      display: flex;
+      justify-content: flex-start;
+      span{
+        display: block;
+        font-weight: bold;
+        color: @icon-color;
+        font-size: @font-size-md;
+      }
+      p{
+        color: @icon-color;
+        font-size: @font-size-md;
+        padding: 0;
+      }
+      span:nth-of-type(1){
+        margin-top: 2px;
+        width:8px;
+        height:28px;
+        background:#FFE400;
+        border-radius:100px 1px 100px 1px;
+        margin-right: 8px;
+      }
+      span:nth-of-type(2){
+        height:30px;
+        line-height: 30px;
+      }
+    }
+    p{
+      font-size: @font-size-sm;
+      color: @text-illustration-color;
+      padding-top: 20px;
+    }
+  }
+}

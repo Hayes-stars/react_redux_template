@@ -1,0 +1,266 @@
+
+:global{
+  .am-list-item .am-input-control input{
+    font-size: @font-size-md;
+  }
+  .am-list-item .am-input-label.am-input-label-5{
+    width: 4.5rem;
+
+  }
+  .am-list-item.am-input-error .am-input-error-extra{
+    width: 38px;height: 38px;
+    background-size: 38px auto;
+  }
+  .am-toast-text{
+    div{
+      font-size: @font-size-md;
+    }
+  }
+  .am-list-item.am-input-item {
+    flex: 3;
+  }
+  html:not([data-scale]) .am-list-item:not(:last-child) .am-list-line::after{
+    width: 0;
+    height: 0;
+  }
+}
+
+@import '../common.less';
+//注册-登录
+body{
+  background: #fff;
+}
+.wrap-page{
+  background: #fff;
+  //注册 登录
+  .reg-header{
+    padding: 20px 0;
+    .float{
+      float: left;
+      text-align: center;
+    }
+    .header-lt{
+      color: @text-link-color;
+      font-size: @font-size-mdlg;
+      width: 15%;
+    }
+    .header-ct{
+      font-size: @font-size-mdlg;
+      color: @text-base-color;
+      width: 75%;
+    }
+    .header-rt{
+      font-size:48px;
+      color: @text-base-color;
+      width: 10%;
+
+    }
+  }
+
+  .flex-reg-logo{
+    padding: 118px 288px;
+    .register-logo{
+      width:160px;
+      height:128px;
+    }
+  }
+  .flex-reg-inpt{
+    padding: 0 76px 0 44px;
+    .list-space{
+      padding: 15px 0 15px 0;
+      border:none;
+      position: relative;
+      margin: 0 auto;
+      .inpt_txt{
+        width:100%;
+        height:96px;
+        background:rgba(248,248,248,1);
+        border-radius: 48px;
+        color: #ddd;
+        padding: 0 0 0 28px;
+      }
+      .jump-forget-pwd{
+        text-align: right;
+        color: @text-link-color;
+        font-size: @font-size-md;
+      }
+      .btn-verify-none{
+        //忘记密码获取验证密码 按钮样式
+        border: none;
+        border-radius: 0;
+        background: none;
+        color: #999;
+        font-size: @font-size-md;
+      }
+      .forgetpwd_txt{
+        //忘记密码获取验证密码 输入框样式
+        border-radius: 0;
+        border-bottom: #ebebeb solid 1px;
+        color: #ddd;
+        background: none;
+      }
+      .inpt-tit{
+        //忘记密码 确认密码 输入框样式
+        color: @text-secondary-color;
+        font-size: @font-size-mdlg;
+        float: left;
+        padding: 0 40px 0 0;
+      }
+      .surepwd_txt{
+        //忘记密码获 确认密码 输入框样式
+        border:none;
+        border-radius: none;
+        background: none;
+      }
+
+
+    }
+  }
+  .flex-reg-agree{
+    text-align: center;
+    .reg-agreement{
+      color: @text-secondary-color;
+      font-size: @font-size-md;
+      text-align: center;
+      padding: 96px 0 32px 0;
+      span{
+        color: #4688F4;
+      }
+    }
+  }
+  .flex-btn-reg{
+    text-align: center;
+    padding: 0 76px 0 44px;
+    .btn-register{
+      background:rgba(255,228,0,1);
+      opacity:0.5;
+      color: #555;
+      font-size: 32px;
+      width: 100%;
+      border-radius: 100px;
+      border:none;
+      height: 88px;
+      line-height: 88px;
+      text-align: center;
+    }
+    .btn-reg-Active{
+      background:rgba(255,228,0,1);
+      opacity:1;
+      color: #222;
+    }
+  }
+  .surepwd-btn{
+    //确认修改密码
+    padding: 128px 76px 0 44px;
+  }
+  .flex-login-type{
+    text-align: right;
+    padding: 128px 32px 48px 0;
+    color: @text-link-color;
+    font-size: @font-size-md;
+  }
+  //修改登录密码
+  .pwd-top{
+    margin: 66px auto 0;
+    width: 106px;
+    height: 116px;
+    position: relative;
+    .pwd-logo{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 96px;
+      height: 96px;
+      .pwd-sel-icon{
+        position: absolute;
+        right: -10px;
+        bottom: -15px;
+        width: 46px;
+        height: 46px;
+      }
+    }
+  }
+
+  .pwd-telephone{
+    color: @text-illustration-color;
+    font-size: @font-size-mdlg;
+    text-align: center;
+    padding: 32px 0 64px 0;
+  }
+  .pwd-verify{
+    width:240px;
+    margin: 0 auto;
+    .verify_btn_pwd{
+      width:240px;
+      height:80px;
+      line-height: 80px;
+      color: @text-base-color;
+      border-radius: 100px ;
+      font-size: @font-size-mdlg;
+      border:solid 1px #222;
+    }
+  }
+  .pwd-inpt{
+    width: 80%;
+    margin: 0 auto;
+    padding: 162px 0 32px 0;
+    input{
+      width: 100%;
+      text-align: center;
+      font-size: @font-size-lg;
+      border:none;
+      border-bottom: solid 1px #ebebeb;
+      padding: 0 0 10px 0;
+    }
+  }
+  .pwd-desc{
+    color: @text-illustration-color;
+    font-size: @font-size-md;
+    padding: 32px 48px 128px 48px;
+    span{
+      color: @text-link-color;
+    }
+  }
+  .forgetpwd-list{
+    width: 654px;
+    margin: 0 auto;
+    padding: 30px 0 10px 0;
+    display: flex;
+		overflow: hidden;
+		align-items: center;
+  }
+}
+
+.btn-verify-active {
+	background: @base-color;
+	border-radius: 64px;
+	text-align: center;
+	width: 6.5rem;
+	height: 3rem;
+	line-height: 3rem;
+	padding: 0 25px;
+	color: @icon-color;
+	position: absolute;
+	right: -32px;
+	top: 15px;
+	font-size: @font-size-md;
+	border:none;
+}
+
+.btn-verify-disabled {
+	background: #ddd;
+	color: #999;
+}
+
+.forget-btn-active {
+	text-align: right;
+	height: 3rem;
+	line-height: 3rem;
+	padding: 0 25px;
+	color: @icon-color;
+	font-size: @font-size-md;
+}
+.forget-btn-disabled {
+	color: #999;
+}
+

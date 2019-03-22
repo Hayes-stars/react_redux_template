@@ -1,0 +1,728 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BagWheel{
+    width: 100%;
+    height: 1300px;
+    background-image: url('../../images/activity/BagWheel/icon_bg01.png');
+    font-size: 32px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+:global {
+    .am-modal {
+        width: 420px;
+        .am-modal-content {
+            border-radius: 24px;
+            .am-modal-title {
+                font-size: 28px;
+                color: #222222;
+                font-weight: 700;
+                margin-top: 50px;
+            }
+            .am-modal-alert-content {
+                font-size: 28px;
+                color: #222222;
+            }
+            .am-modal-footer {
+                .am-modal-button {
+                    font-size: 28px;
+                    color: #222222;
+                    height: 88px;
+                    line-height: 88px;
+                }
+            }
+        }
+    }
+}
+
+.BagWheel .wheel_box{
+    width: 640px;
+    height: 640px;
+    position: absolute;
+    z-index: 2;
+    top: 475px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../../images/activity/BagWheel/icon_dzp.png');
+}
+
+.BagWheel .wheel_box{
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+.BagWheel .wheel-goods_box,.BagWheel .wheel-btn_box{
+    position: absolute;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    top: 70px;
+    left: 70px;
+    background-image: url('../../images/activity/BagWheel/icon_dzp_jp.png');
+    background-size: contain;
+}
+
+/* 按钮盒子样式，使用层级来做重叠 */
+.BagWheel .wheel_btn{
+    width: 192px;
+    height: 246px;
+    top: 100px;
+    left: 154px;
+    background-image: url('../../images/activity/BagWheel/icon_zz.png');
+    z-index: 3;
+    transform-origin: 50% 61.5%;
+    transition: transform 6s ease;
+}
+
+.BagWheel .wheel-btn_box .btn{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* 转盘周围闪闪的点 */
+
+.BagWheel .wheel_box .wheel-loop{
+    position: absolute;
+    width: 586px;
+    height: 586px;
+    top: 29px;
+    left: 29px;
+    background-image: url('../../images/activity/BagWheel/icon_dzp_dd01.png');
+    background-size: contain;
+}
+
+.wheel_title {
+    position: absolute;
+    top: 379px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 480px;
+    height: 56px;
+    background-image: url('../../images/activity/BagWheel/icon_bg.png');
+    background-size: contain;
+    font-size: 24px;
+    line-height: 56px;
+    color: #FFE5A7;
+    padding: 0 18px;
+    img {
+        width: 40px;
+        height: 28px;
+        vertical-align: middle;
+        margin: 14px 5px 0 0;
+        float: left;
+    }
+    p {
+        float: left;
+        width: 390px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+.myPrize {
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    right: 20px;
+    bottom: 313px;
+    z-index: 4;
+    img {
+        width: 90px;
+        margin: auto;
+        height: 90px;
+    }
+    p {
+        margin-top: 5px;
+        font-size: 24px;
+        color:#fff;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+.myUnionCard {
+    width: 120px;
+    height: 115px;
+    position: absolute;
+    right: 20px;
+    bottom: 166px;
+    z-index: 4;
+    img {
+        width: 90px;
+        height: 90px;
+        margin: auto;
+    }
+    p {
+        margin-top: 5px;
+        font-size: 24px;
+        color:#fff;
+        text-align: center;
+        font-size: 20px;
+
+    }
+}
+.wheel_num {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    color: #fff;
+    span {
+        color: red;
+    }
+}
+
+.main-box {
+    width: 100%;
+    background: url('../../images/activity/BagWheel/icon_bg01_1.png') center;
+    padding: 0 15px;
+    .main-box-title {
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        width: 100%;
+        height: 106px;
+        justify-content: space-between;
+        
+        div {
+            width: 49%;
+        }
+        .main-box-title-shop {
+            background: url("../../images/activity/BagWheel/icon_tm.png") no-repeat center;
+            background-size: 100% 100%;
+        }
+        .main-box-title-share {
+            background: url("../../images/activity/BagWheel/icon_share.png") no-repeat center;
+            background-size: 100% 100%;
+        }
+    }
+    .main-box-prize {
+        background-color: #5927BE;
+        width: 100%;
+        height: 500px;
+        border-radius: 20px;
+        margin: 32px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        .main-box-prize-t {
+            width: 310px;
+            height: 68px;
+            background: url("../../images/activity/BagWheel/icon_jpzs.png") no-repeat center;
+            background-size: 100% 100%;
+        }
+        ul {
+            width: 100%;
+            height: 240px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+                width: 23%;
+                height: 240px;
+                img {
+
+                }
+                p {
+                    line-height: 24px;
+                    font-size: 24px;
+                    color: #D4C29B;
+                    text-align: center;
+                    margin-top: 27px;
+                }
+            }
+            // li:nth-of-type(1) {
+            // }
+            // li:nth-of-type(2) {
+            //     background: url('../../images/activity/BagWheel/icon_jp02.png') no-repeat center;
+            //     background-size: 100% 100%;
+            // }
+            // li:nth-of-type(3) {
+            //     background: url('../../images/activity/BagWheel/icon_jp03.png') no-repeat center;
+            //     background-size: 100% 100%;
+            // }
+            // li:nth-of-type(4) {
+            //     background: url('../../images/activity/BagWheel/icon_jp04.png') no-repeat center;
+            //     background-size: 100% 100%;
+            // }
+        }
+    }
+    .main-box-nameList {
+        background-color: #fff;
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        margin: 32px 0 64px 0;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content:space-around;
+        // align-items: center;
+        overflow: hidden;
+        p {
+            width: 310px;
+            height: 68px;
+            background: url("../../images/activity/BagWheel/icon_top.png") no-repeat center;
+            background-size: 100% 100%;
+            margin: 20px auto;
+            // margin-top: 20px;
+        }
+        :global {
+            .am-notice-bar {
+                height: 88px;
+                line-height: 88px;
+                font-size: 24px;
+                color: #222;
+                padding: 0 10px;
+                .am-notice-bar-icon {
+                    display: none;
+                }
+            }
+        }
+        // ul {
+        //     width: 100%;
+        //     height: 640px;
+        //     padding: 0 40px;
+        //     box-sizing: border-box;
+        //     overflow-y: scroll;
+        //     -webkit-overflow-scrolling: touch;
+        //     li {
+        //         display: flex;
+        //         flex-direction: row;
+        //         justify-content:space-between;
+        //         align-items: center;
+        //         width: 100%;
+        //         height: 60px;
+        //         color: #666;
+        //         font-size: 28px;
+        //     }
+        //     li:first-of-type {
+        //         color: #222;
+        //         font-weight: 700;
+        //     }
+        // }
+    }
+    .main-box-text {
+        width: 100%;
+        // height: 610px;
+        border: 1px solid #8674FD;
+        border-radius: 20px;
+        color: #8674FD;
+        font-size: 24px;
+        line-height: 33px;
+        padding: 66px 33px;
+        position: relative;
+        .main-box-text-title {
+            width: 267px;
+            height: 60px;
+            font-size: 28px;
+            font-weight: 700;
+            line-height:60px;
+            text-align: center;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid #8674FD;
+            background-color: #300086;
+        }
+        .main-box-text-con {
+
+        }
+    }
+    .main-box-tip {
+        color: #8674FD;
+        font-size: 24px;
+        text-align: center;
+        padding: 54px 0 32px 0;
+        line-height: 24px;
+    }
+}
+
+// 联盟卡资格弹框
+.unionCard-modal-con {
+    width: 100%;
+    :global {
+        .am-modal-content {
+            width: 90%;
+            height: 800px;
+            border-radius: 16px;
+            text-align: center;
+            color: #222;
+            // padding: 0 20px;
+            margin: auto 5%;
+            .am-modal-body {
+                color: #222;
+                color: #222;
+                background-color: #fff;
+                border-radius: 16px;
+                padding: 0;
+            }
+            .am-modal-close {
+                width: 36px;
+                height: 36px;
+                top: 20px;
+                right: 20px;
+                .am-modal-close-x {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+    .unionCard-box {
+        width: 100%;
+        height: 800px;
+        background: url('../../images/activity/BagWheel/icon_bg02.png') no-repeat center;
+        background-size: 100% 100%;
+        position: relative;
+        p {
+            width: 100%;
+            font-size: 36px;
+            line-height: 36px;
+            font-weight: 700;
+            text-align: center;
+            position: absolute;
+            top: 448px;
+            color: #fff;
+        }
+        div {
+            width: 80%;
+            height: 88px;
+            background: url('../../images/activity/BagWheel/icon_bt_ljlq.png') no-repeat center;
+            background-size: 100% 100%;
+            margin: auto;
+            position: absolute;
+            left: 10%;
+            bottom: 88px;
+        }
+    }
+
+    .prize-box {
+        width: 100%;
+        height: 800px;
+        background: url('../../images/activity/BagWheel/icon_bg03.png') no-repeat center;
+        background-size: 100% 100%;
+        position: relative;
+        img {
+            width: 140px;
+            height: 150px;
+            position: absolute;
+            top: 188px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        p {
+            width: 100%;
+            font-size: 36px;
+            line-height: 56px;
+            font-weight: 700;
+            text-align: center;
+            position: absolute;
+            top: 448px;
+            color: #fff;
+        }
+        div {
+            width: 80%;
+            height: 88px;
+            background: url('../../images/activity/BagWheel/icon_bt_ljlq1.png') no-repeat center;
+            background-size: 100% 100%;
+            margin: auto;
+            position: absolute;
+            left: 10%;
+            bottom: 88px;
+        }
+    }
+
+    .prize-list-box {
+        width: 100%;
+        height: 800px;
+        position: relative;
+        img {
+            width: 140px;
+            height: 150px;
+            position: absolute;
+            top: 256px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .prize-list-title {
+            width: 100%;
+            font-size: 36px;
+            line-height: 56px;
+            font-weight: 700;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .prize-list-tip {
+            width: 100%;
+            font-size: 36px;
+            line-height: 56px;
+            text-align: center;
+            position: absolute;
+            top: 475px;
+            color:#666666;
+        }
+    }
+
+    .prize-list-box1 {
+        width: 100%;
+        height: 800px;
+        position: relative;
+        .prize-list-title {
+            width: 100%;
+            font-size: 36px;
+            line-height: 56px;
+            font-weight: 700;
+            text-align: center;
+            padding: 20px 0;
+        }
+        ul {
+            height: 550px;
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin: 0 66px 40px 66px;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            li {
+                width: 140px;
+                // height: 230px;
+                padding: 20px;
+                p {
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #D4C29B;
+                    margin-top: 27px;
+                    text-align: center;
+                }
+            }
+        }
+        .prize-list-btn {
+            font-size: 32px;
+            color:#8037FF;
+            text-align: center;
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            font-weight: 700;
+        }
+    }
+
+    .address-box {
+        width: 100%;
+        height: 800px;
+        position: relative;
+        .address-title {
+            width: 100%;
+            font-size: 36px;
+            line-height: 56px;
+            font-weight: 700;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .address-con {
+            padding: 0 40px;
+            color: #666666;
+            .item {
+                overflow: hidden;
+                
+                font-size: 32px;
+                text-align: left;
+                div {
+                    float: left;
+                    width: 30%;
+                    line-height: 88px;
+                }
+                input {
+                    width: 70%;
+                    float: left;
+                    // height: 88px;
+                    font-size: 32px;
+                    line-height: 32px;
+                    padding: 0;
+                    margin: 28px 0;
+                    box-sizing: border-box;
+                }
+                input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    color: #ddd;
+                    line-height: 32px;
+                    box-sizing: border-box;
+                    font-weight: normal;
+                    
+                }
+                input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    color: #ddd;
+                    line-height: 32px;
+                    box-sizing: border-box;
+                    font-weight: normal;
+                }
+                input::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    color: #ddd;
+                    line-height: 32px;
+                    box-sizing: border-box;
+                    font-weight: normal;
+                }
+                input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #ddd;
+                    line-height: 32px;
+                    box-sizing: border-box;
+                    font-weight: normal;
+                }
+                input:disabled {
+                    color: #999;
+                    background-color: #fff;
+                }
+            }
+            .item-particular {
+                overflow: hidden;
+                line-height: 88px;
+                font-size: 32px;
+                text-align: left;
+                border-top: 1px solid #DDDDDD;
+                border-bottom: 1px solid #DDDDDD;
+                padding: 5px 0;
+                div {
+                    float: left;
+                    width: 30%;
+                }
+                textarea {
+                    width: 69%;
+                    float: left;
+                    height: 200px;
+                    border: none;
+                    padding-top: 20px;
+                    resize:none;
+                }
+                textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    color: #ddd;
+                    line-height: 36px;
+                    font-weight: normal;
+                    
+                }
+                textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    color: #ddd;
+                    line-height: 36px;
+                    font-weight: normal;
+                }
+                textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    color: #ddd;
+                    line-height: 36px;
+                    font-weight: normal;
+                }
+                textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #ddd;
+                    line-height: 36px;
+                    font-weight: normal;
+                }
+                textarea:disabled {
+                    color: #999;
+                    background-color: #fff;
+                }
+            }
+            :global{
+                .am-list-item {
+                    padding: 0;
+                    .am-list-line {
+                        .am-list-content {
+                            font-size: 32px;
+                            line-height: 88px;
+                            padding: 0;
+                            color: #666666;
+                        }
+                        .am-list-extra {
+                            font-size: 32px;
+                            line-height: 88px;
+                            padding: 0;
+                            flex-basis: 50%;
+                        }
+                        .am-list-arrow {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 88px;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            .item-btn {
+                width: 80%;
+                height: 88px;
+                position: absolute;
+                left: 10%;
+                bottom: 88px;
+            }
+            
+        }
+    }
+    
+}
+
+// 领取弹框
+.getDraw-modal-con {
+    width: 100%;
+    :global {
+        .am-modal-content {
+            width: 380px;
+            height: 380px;
+            border-radius: 16px;
+            text-align: center;
+            color: #222;
+            // padding: 0 20px;
+            margin: auto;
+            .am-modal-body {
+                color: #222;
+                color: #222;
+                background-color: #fff;
+                border-radius: 16px;
+                padding: 0;
+            }
+            .am-modal-close {
+                width: 36px;
+                height: 36px;
+                top: 20px;
+                right: 20px;
+                .am-modal-close-x {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+    .getDraw-box {
+        width: 380px;
+        height: 380px;
+        position: relative;
+        img {
+            width: 128px;
+            height: 128px;
+            position: absolute;
+            top: 94px;
+            left: 126px;
+        }
+        p {
+            width: 100%;
+            font-size: 32px;
+            color: #8037FF;
+            font-weight: 700;
+            position: absolute;
+            bottom: 94px;
+        }
+    }
+}

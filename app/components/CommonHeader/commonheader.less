@@ -1,0 +1,92 @@
+@import "./../../style/common.less";
+
+.com-header-box {
+  height: 88px;
+}
+.com-header-container {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+  padding: 0 20px;
+  &.bordered {
+    border-bottom: 1px solid @line-color;
+  }
+  .icon {
+    img {
+      height: 34px;
+      width: 34px;
+    }
+  }
+  .page-title {
+    text-align: center;
+    font-size: 36px;
+    color: #222;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .search {
+    margin-left: 100px;
+  }
+  .shop-cart {
+    margin-right: 1rem;
+  }
+  .refresh {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 8px;
+      width: 30px;
+      height: 30px;
+    }
+    font-size: 28px;
+    color: @text-base-color;
+  }
+  .filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      width: 36px;
+      height: 36px;
+    }
+    font-size: 24px;
+    color: #999;
+  }
+  .self-def {
+    font-size: 32px;
+    color: #222;
+  }
+  .rule {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffe400;
+    background-color: #222;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+  }
+  .left {
+    flex: 2;
+  }
+  .center {
+    flex: 6;
+    overflow: hidden;
+  }
+  .right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    span {
+      color: #222;
+    }
+  }
+}
