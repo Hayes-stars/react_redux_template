@@ -90,7 +90,7 @@
     "immutable": "~3.8.1",
     "install": "^0.12.1",
     "lrz": "^4.9.40",
-    "moment": "^2.20.1",
+    "moment": "^2.29.4",
     "qrcode-reader": "^1.0.4",
     "qrcodejs2": "0.0.2",
     "rc-queue-anim": "^1.5.0",
